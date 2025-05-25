@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def update_faqs():
     conn = psycopg2.connect(
-        host="dpg-d06q1dbuibrs73er06gg-a.render.internal",  # CHÚ Ý: internal hostname
+        host="dpg-d06q1dbuibrs73er06gg-a.render.com",  # CHÚ Ý: internal hostname
         port=5432,
         database="chatbotbvagdb",
         user="chatbotbvaguser",
